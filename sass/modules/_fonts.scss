@@ -1,0 +1,17 @@
+// Leftside navigation button font "Rubik Bold"
+
+@font-face {
+    font-family: "rubik_bold", sans-serif;
+    src: url("../../fonts/rubik-bold/rubik-bold.woff2") format("woff2"),
+        url("../../fonts/rubik-bold/rubik-bold.woff") format("woff"),
+        url("../../fonts/rubik-bold/rubik-bold.ttf") format("ttf");
+}
+
+// Rightside group of navigation buttons with fon "alexBrush"
+
+@font-face {
+    font-family: "alex_brush";
+    src: url("../../fonts/alexBrush/alexBrush.woff2") format("woff2"),
+        url("../../fonts/alexBrush/alexBrush.woff") format("woff"),
+        url("../../fonts/alexBrush/alexBrush.ttf") format("ttf");
+}

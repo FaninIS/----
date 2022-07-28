@@ -1,0 +1,68 @@
+@use "styles" as s;
+
+body,
+html {
+    @include s.bodySize();
+
+    .wrapper {
+        @include s.bodySize();
+
+        .menu {
+            width: inherit;
+
+            & > .menu__list {
+                display: flex;
+                justify-content: flex-end;
+
+                & > .menu__item {
+                    display: flex;
+                    align-items: center;
+
+                    & > .menu__link {
+                        padding: s.$menuItemsSize;
+                        color: #000;
+                        text-transform: capitalize;
+                    }
+
+                    & > .link {
+                        text-decoration: none;
+                        display: block;
+                    }
+                }
+
+                .menu__item_left {
+                    flex-grow: 3;
+
+                    font: {
+                        family: "rubik_bold", sans-serif;
+                        style: normal;
+                        size: 3em;
+                        weight: bold;
+                    }
+                }
+
+                .menu__item_right {
+
+                    font: {
+                        family: "alex_brush";
+                        style: normal;
+                        size: 2em;
+                    }
+                }
+
+                .menu__item_right:hover {
+                    background-color: s.$hoverBgColor;
+                }
+            }
+
+            .list {
+                @include s.listStyle();
+            }
+        }
+
+        .main {
+            @extend .wrapper;
+            background-color: s.$hoverBgColor;
+        }
+    }
+}

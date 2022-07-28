@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "rubik_bold", sans-serif;
+  src: url("../../fonts/rubik-bold/rubik-bold.woff2") format("woff2"), url("../../fonts/rubik-bold/rubik-bold.woff") format("woff"), url("../../fonts/rubik-bold/rubik-bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "alex_brush";
+  src: url("../../fonts/alexBrush/alexBrush.woff2") format("woff2"), url("../../fonts/alexBrush/alexBrush.woff") format("woff"), url("../../fonts/alexBrush/alexBrush.ttf") format("ttf");
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper, body .wrapper .main,
+html .wrapper,
+html .wrapper .main {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .menu,
+html .wrapper .menu {
+  width: inherit;
+}
+body .wrapper .menu > .menu__list, body .wrapper .main .menu > .menu__list,
+html .wrapper .menu > .menu__list,
+html .wrapper .main .menu > .menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+body .wrapper .menu > .menu__list > .menu__item,
+html .wrapper .menu > .menu__list > .menu__item {
+  display: flex;
+  align-items: center;
+}
+body .wrapper .menu > .menu__list > .menu__item > .menu__link,
+html .wrapper .menu > .menu__list > .menu__item > .menu__link {
+  padding: 0 30px;
+  color: #000;
+  text-transform: capitalize;
+}
+body .wrapper .menu > .menu__list > .menu__item > .link,
+html .wrapper .menu > .menu__list > .menu__item > .link {
+  text-decoration: none;
+  display: block;
+}
+body .wrapper .menu > .menu__list .menu__item_left,
+html .wrapper .menu > .menu__list .menu__item_left {
+  flex-grow: 3;
+  font-family: "rubik_bold", sans-serif;
+  font-style: normal;
+  font-size: 3em;
+  font-weight: bold;
+}
+body .wrapper .menu > .menu__list .menu__item_right,
+html .wrapper .menu > .menu__list .menu__item_right {
+  font-family: "alex_brush";
+  font-style: normal;
+  font-size: 2em;
+}
+body .wrapper .menu > .menu__list .menu__item_right:hover,
+html .wrapper .menu > .menu__list .menu__item_right:hover {
+  background-color: gainsboro;
+}
+body .wrapper .menu .list,
+html .wrapper .menu .list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+body .wrapper .main,
+html .wrapper .main {
+  background-color: gainsboro;
+}
